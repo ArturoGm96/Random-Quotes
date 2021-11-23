@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Sass/estilos.css">
+    <link rel="stylesheet" href="./Sass/iconos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icono.ico" type="image/x-icon">
+    <title>Random Quotes</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+    <div class="container-fluid" id='box-quote'>
+        <div class="container-fluid" id='box-text'>
+            <h1 id="text"> “The most common way people give up their power is by thinking they don’t have any”</h1>
+            <h3 id="author">- Alice Walker</h3>
+            <div class="container-fluid" id="select">
+                <a href="www.twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+                <button onclick="random()" id="btnNext">New Quote</button>
+            </div> 
+        </div>
+        <p>By Arturo Granados</p>
+    </div>
+</body>
+
+<script>
+    function random (){
+        
+        var num = 1 + Math.floor(Math.random() * 7);
+
+        switch(num){
+            case 1:
+                $(document).ready(function(){
+                    $('#text').text("\"I attribute my success to this: I never gave or took any excuse\"");
+                    $('#author').text("- Florence Nightingale");
+                    $("#box-quote").css({'background': 'rgb(112, 139, 104)'});
+                    $("i").css({'background': 'rgb(112, 139, 104)'});
+                    $("#btnNext").css({'background': 'rgb(112, 139, 104)'});
+                    $("h1").css({'color': 'rgb(112, 139, 104)'});
+                    $("h3").css({'color': 'rgb(112, 139, 104)'});
+                });
+                break;
+
+            case 2:
+                $(document).ready(function(){
+                    $('#text').text("\"Few things can help an individual more than to place responsibility on him, and to let him know that you trust him\"");
+                    $('#author').text("- Booker T. Washington");
+                    $("#box-quote").css({'background': 'rgb(190, 204, 59)'});
+                    $("i").css({'background': 'rgb(190, 204, 59)'});
+                    $("#btnNext").css({'background': 'rgb(190, 204, 59)'});
+                    $("h1").css({'color': 'rgb(190, 204, 59)'});
+                    $("h3").css({'color': 'rgb(190, 204, 59)'});
+                });
+                break;
+
+            case 3:
+                $(document).ready(function(){
+                    $('#text').text("\"Every strike brings me closer to the next home run\"");
+                    $('#author').text("- Babe Ruth");
+                    $("#box-quote").css({'background': 'rgb(218, 122, 218)'});
+                    $("i").css({'background': 'rgb(218, 122, 218)'});
+                    $("#btnNext").css({'background': 'rgb(218, 122, 218)'});
+                    $("h1").css({'color': 'rgb(218, 122, 218)'});
+                    $("h3").css({'color': 'rgb(218, 122, 218)'});
+                });
+                break;
+
+            case 4:
+                $(document).ready(function(){
+                    $('#text').text("\"Life isn’t about getting and having, it’s about giving and being\"");
+                    $('#author').text("- Kevin Kruse");
+                    $("#box-quote").css({'background': 'rgb(223, 43, 112)'});
+                    $("i").css({'background': 'rgb(223, 43, 112)'});
+                    $("#btnNext").css({'background': 'rgb(223, 43, 112)'});
+                    $("h1").css({'color': 'rgb(223, 43, 112)'});
+                    $("h3").css({'color': 'rgb(223, 43, 112)'});
+                });
+                break;
+
+            case 5:
+                $(document).ready(function(){
+                    $('#text').text("\"The question isn’t who is going to let me; it’s who is going to stop me\"");
+                    $('#author').text("- Ayn Rand");
+                    $("#box-quote").css({'background': 'rgb(68, 93, 109)'});
+                    $("i").css({'background': 'rgb(68, 93, 109)'});
+                    $("#btnNext").css({'background': 'rgb(68, 93, 109)'});
+                    $("h1").css({'color': 'rgb(68, 93, 109)'});
+                    $("h3").css({'color': 'rgb(68, 93, 109)'});
+                });
+                break;
+
+            case 6:
+                $(document).ready(function(){
+                    $('#text').text("\"An unexamined life is not worth living\"");
+                    $('#author').text("- Socrates");
+                    $("#box-quote").css({'background': 'rgb(219, 12, 47)'});
+                    $("i").css({'background': 'rgb(219, 12, 47)'});
+                    $("#btnNext").css({'background': 'rgb(219, 12, 47)'});
+                    $("h1").css({'color': 'rgb(219, 12, 47)'});
+                    $("h3").css({'color': 'rgb(219, 12, 47)'});
+                });
+                break;
+
+            case 7:
+                $(document).ready(function(){
+                    $('#text').text("\"Dream big and dare to fail\"");
+                    $('#author').text("- Norman Vaughan");
+                    $("#box-quote").css({'background': 'rgb(87, 87, 87)'});
+                    $("i").css({'background': 'rgb(87, 87, 87)'});
+                    $("#btnNext").css({'background': 'rgb(87, 87, 87)'});
+                    $("h1").css({'color': 'rgb(87, 87, 87)'});
+                    $("h3").css({'color': 'rgb(87, 87, 87)'});
+                });
+                break;
+        }
+    }
+</script>
+
+</html>
