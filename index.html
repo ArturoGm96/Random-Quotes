@@ -18,7 +18,7 @@
             <h1 id="text"> “The most common way people give up their power is by thinking they don’t have any”</h1>
             <h3 id="author">- Alice Walker</h3>
             <div class="container-fluid" id="select">
-                <a href="www.twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+                <a href="https://twitter.com/intent/tweet?text=Aprendiendo%20a%20crear%20un%20enlace%20para%20compartir%20en%20Twitter&url=http%3A%2F%2Fparzibyte.me%2Fblog&via=parzibyte&hashtags=programación,html" target="_blank"><i class="icon-twitter"></i></a>
                 <button onclick="random()" id="btnNext">New Quote</button>
             </div> 
         </div>
@@ -117,6 +117,12 @@
                 break;
         }
     }
+
+    $(document).ready(function(){
+        $('#hola').click(function(){
+            $('#cubo').animate({'left' : '+=50px'});
+        });
+    });
 </script>
 
 </html>
